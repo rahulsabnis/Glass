@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Glass</string>
+    <string name="Title">Glass App</string>
+    <string name="Enter">Enter Text Here</string>
+    <string name="message">message</string>
+    <string name="title_activity_display_message">My Message</string>
+</resources>
