@@ -4,13 +4,6 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:background="@android:color/transparent">
-    <SurfaceView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/videoView"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/editText"
-            android:layout_alignRight="@+id/button"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,28 +14,29 @@
     <!-- List View -->
     <ListView
             android:id="@+id/list_view"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignTop="@+id/textView2"
+            android:layout_alignParentRight="true"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Send Message"
             android:id="@+id/button" android:layout_gravity="center_horizontal"
             android:layout_alignParentBottom="true" android:layout_alignParentRight="true"/>
-    <TextView
+    <com.hshackerz.Glass.CameraView
             android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/cameraView" android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:layout_above="@+id/list_view"/>
+    <TextView
             android:layout_height="wrap_content"
             android:text=""
-            android:id="@+id/textView" android:layout_alignParentRight="true"
-            android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/textView2" android:layout_below="@+id/textView"
+            android:scrollbars="vertical"
+            android:height="60dp"
+            android:maxLines="4"
+            android:id="@+id/textView2"
             android:layout_above="@+id/editText" android:layout_alignParentRight="true"
-            android:layout_alignParentLeft="true"/>
-
-
+            android:layout_alignParentLeft="true" android:layout_width="wrap_content"/>
 </RelativeLayout>
 

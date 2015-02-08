@@ -50,6 +50,7 @@ public class SendMessageButtonListener implements View.OnClickListener
     private void addToList(String textMessage) {
         if (textMessage != null) {
             textView.append("Me" + ": " + textMessage + "\n");
+            mainActivity.getHistory();
         }
     }
 
